@@ -1,0 +1,212 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: lightblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.main_container{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    position: relative;
+    background: #fff;
+    margin: 50px;
+    border-radius: 15px;
+    box-shadow:0 35px 55px rgba(0, 0, 0, 0.1);
+}
+.left_container{
+    width:30%;
+    height: auto;
+    border: 1px solid black;
+    background-color: teal;
+}
+.left_container .profile_image_box{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 12px;
+}
+.left_container .profile_image_box #profile_pic{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+.left_container .profile_image_box #profile_name{
+    color: #fff;
+    font-size: 1.5rem;
+    margin-top: 10px;
+    text-align: center;
+    font-weight: 600;
+    line-height: 1.4em;
+}
+.left_container .profile_details{
+    width: 98%;
+    height: auto;
+    margin: 1%;
+    margin-top: 10px;
+    margin-bottom: 20px;   
+}
+.left_container .profile_details #profile_detail{
+    width: 98%;
+    height: auto;
+    color: white;
+    margin: 1%;
+    padding: 6px; 
+    font-size: 1.1rem;
+    font-weight: 900;
+}
+.left_container .profile_details #profile_detail .pro_icon{
+    padding-right: 20px;
+    color: white;  
+}
+.left_container .skill_details{
+    width: 98%;
+    height: auto;
+    margin: 1%;
+    margin-top: 10px;
+    margin-bottom: 20px;   
+}
+.left_container .skill_details .container_heading{
+    width: 97%;
+    height: auto;
+    margin: 1.5%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-weight: 400;
+}
+.left_container .skill_details .container_heading #heading{
+    font-size: 1.9rem;
+    color: white;
+}
+.skill_details .container_heading .skill_icon{
+    padding-right:10px ;
+    color: white;
+}
+.left_container .skill_details .skills_container {
+    width: 100%;
+    border-radius: 15px;
+    background-color: white;
+} 
+.left_container .skill_details #course{
+    color: white;
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+.left_container .skill_details .skills_container .skills {
+text-align: right;
+padding-top: 5px;
+padding-bottom: 5px;
+color: black;
+font-weight: 900;
+}
+
+.html {width: 90%; background-color: #94FFFF;}
+.css {width: 80%; background-color: #94FFFF;}
+.js {width: 65%; background-color: #94FFFF;}
+.bootstrap {width: 80%; background-color: #94FFFF;}
+.ui {width: 70%; background-color: #94FFFF;}
+.php {width: 50%; background-color: #94FFFF;}
+
+.left_container .skill_details #lists{
+    width: 98%;
+    height: auto;
+    margin: 1%;
+    font-size: 1rem;
+    padding-bottom: 5px;
+    padding-left: 15px; 
+    color: white;
+}
+
+.right_container{
+    width: 70%;
+    height: auto;
+    margin: 10px;
+}
+.right_container .detail_container{
+    width: 98%;
+    height: auto;
+    margin: 1%;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 3px 7px 0 rgba(0, 0, 0, 0.2), 0 5px 17px 0 rgba(0, 0, 0, 0.19);
+}
+.right_container .detail_container .detail_container_heading{
+    width: 97%;
+    height: auto;
+    margin: 1.5%;
+    padding-top: 5px;
+    font-weight: 400;
+}
+.right_container .detail_container .detail_container_heading #detail_heading{
+    font-size: 1.9rem;
+    color: rgba(9, 8, 8, 0.507);
+}
+.detail_container_heading .det_icon{
+    padding-right:10px ;
+    color: teal;
+}
+.right_container .detail_container .detail_about{
+    width: 98%;
+    height: auto;
+    margin: 1%;
+    padding-left: 10px;
+}
+.right_container .detail_container .detail_about #what_detail{
+    font-size: 1.2rem;
+    color: rgb(0, 0, 0,.7);
+}
+.right_container .detail_container .detail_about #when_detail{
+    font-size: 1rem;
+    color: teal;
+    padding-top: 10px;
+}
+.right_container .detail_container .detail_about .when_det_icon {
+    padding-right: 8px;
+    color: teal;
+}
+.right_container .detail_container .detail_about #which_detail{
+    padding-top: 8px;
+    padding-bottom: 8px;
+    color: black;
+}
+
+@media only screen and (max-width: 768px) {
+    .main_container{
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+    }
+    .left_container{
+        width:100%;
+        height: auto;
+        border: 1px solid black;
+        background-color: teal;
+    }
+    .right_container{
+        width: 100%;
+        height: auto;
+        margin: 10px;
+    }
+    .right_container .detail_container{
+        width: 92%;
+        height: auto;
+        margin: 1%;
+        margin-top: 10px;
+        margin-bottom: 20px;
+        border-radius: 10px;
+        box-shadow: 0 3px 7px 0 rgba(0, 0, 0, 0.2), 0 5px 17px 0 rgba(0, 0, 0, 0.19);
+    }
+}
